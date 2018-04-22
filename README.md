@@ -18,7 +18,7 @@ vjain:docker vedantjain$ docker run -p 15000:5000 vedantja/model_microservice_ex
 ```
 #### The application is running on port 5000. So open another terminal window and submit the following command:
 
-<code>$ curl -H 'Content-Type:application/json' -d '{"x": -39.578, "y": -22.41,  "z": 39.21, "User": "a", "Model": "gear_2", "Device": "gear"}' localhost:5000<</code>
+<code>$ curl -H 'Content-Type:application/json' -d '{"x": -39.578, "y": -22.41,  "z": 39.21, "User": "a", "Model": "gear_2", "Device": "gear"}' localhost:5000</code>
 
 
 ### You will see the following output in the new window:
