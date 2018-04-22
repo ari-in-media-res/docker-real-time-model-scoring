@@ -1,4 +1,4 @@
-# Containerized Model Serving using Scikit-Learn and Docker
+# Containerized Model Scoring using Scikit-Learn and Docker
 
 
 ## Build the docker image
