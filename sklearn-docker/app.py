@@ -15,7 +15,7 @@ def get_input():
     if not request.get_json():
        app.logger.error("Request has no data or request is not json, aborting")
        abort(400)
-    zip_ref = zipfile.ZipFile('../resources/activity.zip', 'r')
+    zip_ref = zipfile.ZipFile('activity.zip', 'r')
     zip_ref.extractall('model')
     zip_ref.close()
     model = joblib.load('model/activity_dtree.pkl')
