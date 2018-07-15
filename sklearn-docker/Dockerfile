@@ -19,16 +19,17 @@ RUN \
   pip3 install --upgrade pip && \
   rm -rf /var/lib/apt/lists/*
 
-ADD app.py /
-ADD activity.zip /
-
-# Define working directory.
-WORKDIR /
-
 RUN python -m pip install 'flask==0.12.2'
 RUN python -m pip install 'pandas==0.20.3'
 RUN python -m pip install 'scipy==0.19.1'
 RUN python -m pip install 'sklearn==0.0'
 RUN python -m pip install 'scikit-learn==0.19.0'
 RUN python -m pip install 'category_encoders==1.2.6'
+
+ADD app.py /
+ADD activity.zip /
+
+# Define working directory.
+WORKDIR /
+
 CMD [ "python", "./app.py"]
